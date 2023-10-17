@@ -14,7 +14,7 @@ export const playlists: Playlist[] = [
     title: "Electronic Party",
     color: colors.teal,
     cover:
-      "https://res.cloudinary.com/dp3ppkxo5/image/upload/v1693776174/spotify-astro/playlist_1_yci5uf.jpg",
+      "https://i.scdn.co/image/ab67616100005174214f3cf1cbe7139c1e26ffbb",
     artists: ["Avicii", "Alok"],
   },
   {
