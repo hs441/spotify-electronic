@@ -35,27 +35,27 @@ export const playlists: Playlist[] = [
   },
   {
     id: "4",
-    title: "Beatles Classics",
+    title: "Selena Gomez",
     color: colors.red,
     cover:
-      "https://res.cloudinary.com/dp3ppkxo5/image/upload/v1693776175/spotify-astro/playlist_4_ap5xnb.jpg",
-    artists: ["The Beatles"],
+      "https://m.media-amazon.com/images/M/MV5BMjAwNTE2MDMyMl5BMl5BanBnXkFtZTgwMjAyODM3MTI@._V1_FMjpg_UX1000_.jpg",
+    artists: ["Selena Gomez"],
   },
   {
     id: "5",
-    title: "Electronic Dance",
-    color: colors.pink,
+    title: "Charlie Puth",
+    color: colors.black,
     cover:
-      "https://res.cloudinary.com/dp3ppkxo5/image/upload/v1693776175/spotify-astro/playlist_5_erjyb7.jpg",
-    artists: ["Deadmau5"],
+      "https://static.stereogum.com/uploads/2018/05/Charlie-Puth-1525722403-scaled.jpg",
+    artists: ["Charlie Puth"],
   },
   {
     id: "6",
-    title: "Cow songs",
+    title: "Zayn",
     color: colors.gray,
     cover:
-      "https://res.cloudinary.com/dp3ppkxo5/image/upload/v1693776474/spotify-astro/R-15112137-1586815179-1911_fsyl58.jpg",
-    artists: ["Saint Hilda", "Canada Buffalo"],
+      "https://www.billboard.com/wp-content/uploads/2023/06/ZAYN-cr-Dennis-Leupold-billboard-1548.jpg?w=942&h=623&crop=1",
+    artists: ["Zayn Malik"],
   },
 ];
 
