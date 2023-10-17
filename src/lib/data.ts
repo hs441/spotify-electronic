@@ -11,23 +11,23 @@ export interface Playlist {
 export const playlists: Playlist[] = [
   {
     id: "1",
-    title: "Electronic Party",
+    title: "The Weeknd",
     color: colors.teal,
     cover:
       "https://i.scdn.co/image/ab67616100005174214f3cf1cbe7139c1e26ffbb",
-    artists: ["Avicii", "Alok"],
+    artists: ["The Weeknd"],
   },
   {
     id: "2",
-    title: "Trance",
+    title: "Harry Styles",
     color: colors.green,
     cover:
-      "https://res.cloudinary.com/dp3ppkxo5/image/upload/v1693776174/spotify-astro/playlist_2_f9ymlx.jpg",
-    artists: ["Tiesto", "Armin Van Buuren"],
+      "https://m.media-amazon.com/images/M/MV5BMTUxMzU2MTk1OF5BMl5BanBnXkFtZTgwNzg4NjAwMzI@._V1_.jpg",
+    artists: ["Harry Styles"],
   },
   {
     id: "3",
-    title: "Trap Vibes",
+    title: "Travis Scott",
     color: colors.rose,
     cover:
       "https://res.cloudinary.com/dp3ppkxo5/image/upload/v1693776175/spotify-astro/playlist_3_grshca.jpg",
