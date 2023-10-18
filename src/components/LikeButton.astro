@@ -8,7 +8,7 @@ interface Props {
 const { size = "md" } = Astro.props;
 ---
 
-<button data-confetti-button
+<button
   type="button"
   class="text-green-500 hover:scale-105 rounded-full flex items-center justify-center alert"
   class:list={[size === "md" && "h-12 w-12", size === "lg" && "h-14 w-14"]}
