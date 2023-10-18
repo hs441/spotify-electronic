@@ -8,7 +8,7 @@ interface Props {
 const { size = "md" } = Astro.props;
 ---
 
-<button
+<button data-confetti-button
   type="button"
   class="text-green-500 hover:scale-105 rounded-full flex items-center justify-center"
   class:list={[size === "md" && "h-12 w-12", size === "lg" && "h-14 w-14"]}
@@ -18,3 +18,16 @@ const { size = "md" } = Astro.props;
     class:list={[size === "md" && "h-8 w-8", size === "lg" && "h-10 w-10"]}
   />
 </button>
+
+<script>
+  // Import npm modules.
+  import confetti from 'canvas-confetti';
+
+  // Find our component DOM on the page.
+  const buttons = document.querySelectorAll('[data-confetti-button]');
+
+  // Add event listeners to fire confetti when a button is clicked.
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => confetti());
+  });
+</script>
