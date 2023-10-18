@@ -10,7 +10,7 @@ const { size = "md" } = Astro.props;
 
 <button
   type="button"
-  class="text-green-500 hover:scale-105 rounded-full flex items-center justify-center"
+  class="text-green-500 hover:scale-105 rounded-full flex items-center justify-center alert"
   class:list={[size === "md" && "h-12 w-12", size === "lg" && "h-14 w-14"]}
 >
   <Icon
@@ -18,3 +18,15 @@ const { size = "md" } = Astro.props;
     class:list={[size === "md" && "h-8 w-8", size === "lg" && "h-10 w-10"]}
   />
 </button>
+
+<script>
+  // Find all buttons with the `alert` class on the page.
+  const buttons = document.querySelectorAll('button.alert');
+
+  // Handle clicks on each button.
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      alert('Button was clicked!');
+    });
+  });
+</script>
