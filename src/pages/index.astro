@@ -27,9 +27,9 @@ import { playlists, morePlaylists } from "../lib/data";
     >
     </div>
   </div>
-  <div class="px-6 relative z-10 mt-4 MagicScroll" data-options="mode: carousel; height: 275px;">
+  <div class="px-6 relative z-10 mt-4">
     <h2 class="text-2xl font-bold">Made for you</h2>
-    <div class="MagicScroll" data-options="mode: carousel; height: 275px;">
+    <div class="MagicScroll" data-options="mode: cover-flow; height: 275px;">
       {morePlaylists.map((playlist) => <PlaylistCard playlist={playlist} />)}
     </div>
   </div>
