@@ -52,7 +52,7 @@ export const playlists: Playlist[] = [
   {
     id: "6",
     title: "Zayn",
-    color: colors.gray,
+    color: colors.indigo,
     cover:
       "https://www.billboard.com/wp-content/uploads/2023/06/ZAYN-cr-Dennis-Leupold-billboard-1548.jpg?w=942&h=623&crop=1",
     artists: ["Zayn Malik"],
