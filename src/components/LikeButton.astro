@@ -8,6 +8,7 @@ interface Props {
 const { size = "md" } = Astro.props;
 ---
 
+<astro-heart>
 <button
   type="button"
   class="text-green-500 hover:scale-105 rounded-full flex items-center justify-center alert"
@@ -18,15 +19,26 @@ const { size = "md" } = Astro.props;
     class:list={[size === "md" && "h-8 w-8", size === "lg" && "h-10 w-10"]}
   />
 </button>
+</astro-heart>
 
 <script>
-  // Find all buttons with the `alert` class on the page.
-  const buttons = document.querySelectorAll('button.alert');
+  // Define the behaviour for our new type of HTML element.
+  class AstroHeart extends HTMLElement {
+    constructor() {
+      super();
+      let count = 0;
 
-  // Handle clicks on each button.
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      alert('Added to liked songs!');
-    });
-  });
+      const heartButton = this.querySelector('button');
+      const countSpan = this.querySelector('span');
+
+      // Each time the button is clicked, update the count.
+      heartButton.addEventListener('click', () => {
+        count++;
+        countSpan.textContent = count.toString();
+      });
+    }
+  }
+
+  // Tell the browser to use our AstroHeart class for <astro-heart> elements.
+  customElements.define('astro-heart', AstroHeart);
 </script>
