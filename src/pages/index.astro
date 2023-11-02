@@ -5,6 +5,7 @@ import PlaylistCard from "../components/PlaylistCard.astro";
 import PlaylistItemCard from "../components/PlaylistItemCard.astro";
 import Layout from "../layouts/Layout.astro";
 import { playlists, morePlaylists } from "../lib/data";
+import { fade } from 'astro:transitions';
 ---
 
 <Layout title="Home">
@@ -13,7 +14,7 @@ import { playlists, morePlaylists } from "../lib/data";
     class="relative transition-all duration-1000 bg-context"
     style="min-height:300px;--context-color:#134e4a;"
   >
-    <PageHeader />
+    <PageHeader transition:animate={fade({ duration: '0.4s' })} />
     <div class="relative z-10 px-6">
       <GreetingTitle client:visible />
       <div
